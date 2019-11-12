@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>{{$title}}</title>
+    </head>
+    <body>
+
+        <h1>View date: {{$date_time}}</h1>
+
+        <br/>
+
+        <table>
+            <thead>
+                <tr>Name</tr>
+            </thead>
+            <tbody>
+                {% foreach ($testers as $tester): %}
+                <tr>
+                <td>{{$tester}}</td>
+                </tr>
+                {% endforeach; %}
+            </tbody>
+        </table>
+    </body>
+</html>
